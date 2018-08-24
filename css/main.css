@@ -1,0 +1,75 @@
+body {
+	background: #f3f2f3;
+	color: #363636;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logo-container {
+	text-align: center;
+	width: 100%;
+	margin: 2em 0;
+}
+
+.logo-container .logo {
+	margin-bottom: 1em;
+}
+
+.logo-container img {
+	display: block;
+	margin: auto;
+}
+
+.main {
+	max-width: 600px;
+	justify-content: center;
+}
+
+.container h1 {
+	font-size: 2em;
+}
+
+.container h3 {
+	font-size: 1.3em;
+}
+
+.box {
+	padding: 2em;
+	background: white;
+	box-shadow: 1px 1px 3px #cecece;
+}
+
+.box header {
+	text-align: center;
+}
+
+form {
+	width: 100%;
+}
+
+form .form-group {
+	display: flex;
+}
+
+form .form-group .form-control:first-child {
+	padding-right: 1em;
+}
+
+form .form-control {
+	width: 100%;
+}
+
+form .form-control input {
+	background: #f3f2f3;
+	border: 1px solid #e6e7e6;
+	width: 100%;
+}
+
+form .form-control.half {
+	width: 50%;
+}
+
+form button {
+	background: #87754f;
+	color: #fff;
+	width: 100%;
+}

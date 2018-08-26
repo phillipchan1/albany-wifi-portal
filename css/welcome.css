@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	font-weight: 200;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h1,
+h2 {
+	font-weight: 200;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.welcome {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.welcome header {
+	padding: 2em;
+	text-align: center;
+}
+
+.phone-cta-container {
+	background: url(/images/phone-background.svg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	flex: 1 1 auto;
+	padding: 2em 0;
+	color: #fff;
+}
+
+.content {
+	max-width: 600px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.app-store-container {
+	display: flex;
+}
+
+.cta-text-container {
+	width: 50%;
+}
+
+.phone-container {
+	text-align: right;
+	padding: 1em;
+	width: 50%;
+}
+
+.app-store-container img {
+	display: block;
+	margin: 0 0.5em 0.5em;
+	flex: 0 0 auto;
+}
+
+@media all and (max-width: 500px) {
+	.phone-container {
+		width: 50%;
+	}
+	.phone-container img {
+		transform: translateX(-25%);
+	}
+
+	.cta-text-container {
+		padding: 1em;
+	}
+
+	.app-store-container {
+		padding: 0;
+		flex-direction: column;
+	}
+
+	.app-store-container img {
+		width: 100%;
+		height: auto;
+	}
+}

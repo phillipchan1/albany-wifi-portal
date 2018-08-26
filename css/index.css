@@ -1,6 +1,7 @@
 body {
 	background: #f3f2f3;
 	color: #363636;
+	font-weight: 200;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -30,6 +31,15 @@ body {
 
 .container h3 {
 	font-size: 1.3em;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+h2,
+h3 {
+	font-weight: 200;
 }
 
 .box {
@@ -62,6 +72,10 @@ form .form-control input {
 	background: #f3f2f3;
 	border: 1px solid #e6e7e6;
 	width: 100%;
+}
+
+form label {
+	font-weight: 300;
 }
 
 form .form-control.half {

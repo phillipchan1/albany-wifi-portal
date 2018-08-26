@@ -30,7 +30,7 @@
 				<h1>Welcome to Albany</h1>
 				<h3>Sign in for complimentary wi-fi.</h3>
 			</header>
-			<form action="">
+			<form action="" id="wifi-form">
 				<div class="form-group">
 					<div class="form-control half">
 						<label for="firstName">First Name:</label>
@@ -45,13 +45,15 @@
 					<label for="email">Email:</label>
 					<input required type="email" name="email" />
 				</div>
-				<button>Enjoy</button>
+				<button id="submit-form">Enjoy</button>
 			</form>
 		</div>
 
 
 	</div>
-
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/form-serializer@2.5.0/dist/jquery.serialize-object.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

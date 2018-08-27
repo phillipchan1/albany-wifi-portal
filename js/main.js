@@ -15,7 +15,7 @@ $('#submit-form').on('click', function(e) {
 		data: formData,
 		complete: function() {
 			console.log('should redirect');
-			window.location = '/welcome.html';
+			window.location = '/welcome.php';
 		}
 	}).success();
 });

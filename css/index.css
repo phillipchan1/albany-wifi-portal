@@ -57,6 +57,7 @@ form {
 }
 
 form .form-group {
+	-js-display: flex;
 	display: flex;
 }
 

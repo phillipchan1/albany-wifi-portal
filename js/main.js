@@ -1,5 +1,5 @@
 var url =
-	'https://script.google.com/macros/s/AKfycbzY7e5k4BapaRkuSvgzBIH-3liunNmSvgT7sEdgW1-FuBS28Bg/exec';
+	'https://script.google.com/macros/s/AKfycbxPaGYk-3B8Z6XHY059p3SmLdt6beUHlkezvQg6nHO1zh5Ango/exec';
 
 var $form = $('form#wifi-form');
 
@@ -8,14 +8,24 @@ $('#submit-form').on('click', function(e) {
 	formData.dateAccessed = new Date();
 
 	e.preventDefault();
-	var jqxhr = $.ajax({
-		url: url,
-		method: 'GET',
-		dataType: 'json',
+
+	var freeTime = $.ajax({
+		url: '/free_time.cgi',
+		method: 'POST',
 		data: formData,
+		error: function(err) {
+			console.log(err);
+		},
 		complete: function() {
-			console.log('should redirect');
-			window.location = '/welcome.html';
+			var jqxhr = $.ajax({
+				url: url,
+				method: 'GET',
+				dataType: 'json',
+				data: formData,
+				complete: function() {
+					window.location = '/welcome.html';
+				}
+			}).success();
 		}
 	}).success();
 });

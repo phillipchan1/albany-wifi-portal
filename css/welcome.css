@@ -49,6 +49,16 @@ div {
 	margin: 0 auto;
 }
 
+.rolex-container {
+	padding: 2em 1em 0 7em;
+	justify-content: flex-end;
+}
+
+.rolex-container img {
+	width: 100%;
+	height: 100%;
+}
+
 .app-store-container {
 	display: flex;
 }
@@ -63,10 +73,15 @@ div {
 	width: 50%;
 }
 
+.app-store-container a {
+	margin-right: 1em;
+}
+
 .app-store-container img {
 	display: block;
 	margin: 0 0.5em 0.5em;
 	flex: 0 0 auto;
+	width: 100%;
 }
 
 @media all and (max-width: 500px) {
@@ -89,5 +104,9 @@ div {
 	.app-store-container img {
 		width: 100%;
 		height: auto;
+	}
+
+	.rolex-container {
+		padding: 1em;
 	}
 }

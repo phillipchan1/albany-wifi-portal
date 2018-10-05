@@ -4,6 +4,11 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.welcome {
+	width: 50%;
+	margin: auto;
+}
+
 h1 {
 	font-size: 28px;
 }
@@ -50,8 +55,7 @@ div {
 }
 
 .rolex-container {
-	padding: 2em 1em 0 7em;
-	justify-content: flex-end;
+	width: 100%;
 }
 
 .rolex-container img {

@@ -5,7 +5,7 @@ body {
 }
 
 .welcome {
-	width: 50%;
+	width: 650px;
 	margin: auto;
 }
 
@@ -91,6 +91,12 @@ div {
 	margin: 0 0.5em 0.5em;
 	flex: 0 0 auto;
 	width: 100%;
+}
+
+@media all and (max-width: 900px) {
+	.welcome {
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 500px) {
